@@ -547,6 +547,8 @@ When I correct you, or you catch yourself making a mistake: before continuing ad
 ## Lessons
 
 - (Claude adds rules here)
+- Version-threshold checks: before comparing, verify the running kernel series (major.minor, epoch stripped) matches the fix series — vendor kernels (RPi `1:` epoch, Proxmox `PMX`, LXC = host kernel) otherwise produce false PATCHED.
+- `ss -M` combined with `-t` also lists all TCP sockets and adds a Netid column; use `ss -Mln` for MPTCP-only listeners.
 
 ## Additional Resources
 
